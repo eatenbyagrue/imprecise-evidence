@@ -1,0 +1,85 @@
+%!TEX program = xelatex
+\documentclass[11pt, a4paper]{scrartcl}
+%\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[a4paper,lmargin={3.5cm},rmargin={3.5cm}, tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{yfonts, amsmath, amssymb}
+\usepackage[backend=biber, authordate, ibidtracker=context]{biblatex-chicago}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\onehalfspacing{}
+\addbibresource{bib.bib}
+
+\usepackage{fontspec}
+\newfontfamily\osfamily{Latin Modern Roman Demi}
+
+\setkomafont{disposition}{\osfamily}
+
+\renewcommand{\i}[1]{\emph{#1}}
+\renewcommand{\L}{\mathcal{L}}
+\renewcommand{\v}[1]{\vec{\mathrm{#1}}}
+
+\newcommand{\m}[1]{\textswab{#1}}
+\newcommand{\given}[1][]{\:#1\vert\:}
+
+\titleformat{\section}[block]{\Large\bfseries\osfamily\filcenter}{}{1em}{}
+%\titleformat{\section}{\Large\bfseries\osfamily}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\large\filcenter}{}{1em}{}
+%\titleformat{\subsection}{\large\bfseries\osfamily}{\thesubsection}{1em}{}
+%\renewcommand{\thesection}{\Roman{section}} 
+
+\title{\osfamily{}Something Something Imprecise}
+\author{Class Paper for Central Topics in Philosophy of Science \\ Prof.\ Dr.\ Stephan Hartmann \\ WS 2017/2018, LMU Munich \\ Conrad Friedrich \\ \texttt{conradfriedrich@posteo.net} \\ Word count: 5643}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+%\tableofcontents
+\newpage
+\section{I}
+Modeling the cognitive state and dynamics of scientists or, more generally, epistemic agents to research predominantly normative issues is a central aspect in the philosophy of science and formal epistemology. In particular, it is crucial to tell a coherent and convincing story about reasoning with uncertain and incomplete information. The all-too-pervasive problem of induction reappears here, too. A crowd favorite in much of these fields is the use of a Bayesian framework, which has proven meaningfully relevant, versatile, and successful (cite Hartmann 1 Hartmann2). So much so that it is not improper to speak of something like a Bayesian orthodoxy in the philosophy of science. More precisely, it is very common to assess questions about evidence and uncertain reasoning within the Bayesian framework, implying the use of the mathematical theory of probabilities to capture doxastic states and reasoning processes of epistemic agents.
+
+\subsection{I}
+The Bayesian framework is a method or tool to assess a philosophical problem. The framework forces the philosopher to very precisely state her problem in a quantifiable manner, and repays this effort with the deductive capabilities of probability theory. When such a powerful tool becomes orthodoxy, it might be tempting to disregard the substantial assumptions made just to be able to apply the tool. When you've got a hammer, everything looks like a nail. The method should not be implemented for its own sake, of course, and instead be regulated by some sensible desiderata for a successful use of the method. One particularly relevant desideratum concerns the lack of complexity of the framework. Bayesianism is comparably simple: The doxastic state of an agent is modeled by a single probability function. If there is a competing framework which do offer little more for the price of massively increased complexity, it'd be prudent to stick to the Bayes, man. 
+
+\subsection{II}
+Responsible use of the framework requires careful analysis of the applicability of the framework just as much as of the actual application, then. To respect this, it is especially critical to know the limits and weaknesses, and Bayesianism arguably has its fair share.  
+
+As a stout critic of Bayesianism as a universal theory of induction, \cite{Norton2011-NORCTB} makes a number of substantial challenges, some of which are the subject of the present paper. I will focus on those challenges to Bayesianism which \emph{prima facie} require the use a more elaborate model.
+
+STATE MAIN CLAIM
+
+\subsection{III}
+Quick summary of what follows
+\section{II}
+
+
+
+The static case
+Three central problems: Accounting for the import of the weight of evidence, Accounting for ignorant cognitive states, and accounting for incomparability / ambiguity in evaluating probabilities 
+\section{III}
+the dynamic case: learning imprecise information. Missing: Very good scientific example. Also missing: Much of a clue as to how it relates to Robust Bayesian Analysis
+\begin{enumerate}[label=\roman{*}]
+    \item A simple yet compelling example where the input is imprecise.
+    \item Show how naively it isn't darstellable
+    \item Show how it isn't darstellable as second order props
+    \item Show how it is darstellable as imprecise props 
+    \item profit
+\end{enumerate}
+\section{IV}
+\section{V}
+
+\begin{singlespacing}
+\printbibliography{}
+\end{singlespacing}
+
+\end{document}
