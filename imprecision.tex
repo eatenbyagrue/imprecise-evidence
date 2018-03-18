@@ -1,4 +1,4 @@
-%!TEX program = xelatex
+%!TEX program = xelatex 
 \documentclass[11pt, a4paper]{scrartcl}
 %\documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -31,13 +31,14 @@
 \newcommand{\m}[1]{\textswab{#1}}
 \newcommand{\given}[1][]{\:#1\vert\:}
 
+
 \titleformat{\section}[block]{\Large\bfseries\osfamily\filcenter}{}{1em}{}
 %\titleformat{\section}{\Large\bfseries\osfamily}{\thesection}{1em}{}
 \titleformat{\subsection}[block]{\large\filcenter}{}{1em}{}
 %\titleformat{\subsection}{\large\bfseries\osfamily}{\thesubsection}{1em}{}
 %\renewcommand{\thesection}{\Roman{section}} 
 
-\title{\osfamily{}Something Something Imprecise}
+\title{\osfamily{}Learning Imprecise Information}
 \author{Class Paper for Central Topics in Philosophy of Science \\ Prof.\ Dr.\ Stephan Hartmann \\ WS 2017/2018, LMU Munich \\ Conrad Friedrich \\ \texttt{conradfriedrich@posteo.net} \\ Word count: 5643}
 
 \begin{document}
@@ -79,12 +80,13 @@ While Elga eventually argues for a different point, he and \citet{sep-imprecise-
 Many justifications for the applicability of the Bayesian framework are pragmatic in nature and employ the close connection to decision theoretic considerations. Closely coupled to the doxastic attitudes of an agent is her betting behaviour. It is not surprising then, that results from empirical studies of the betting behaviour of actual people do have some bearing on the applicability of models based on the Bayesian framework, as the famous Ellsberg problem suggests (\cite{10.2307/1884324}, \cite{Camerer1992}). There is no room in this paper to reiterate the problem and to deal with the question of how empirical findings bear on normative considerations, but it is worth noting that on the face of it, the aversion to ambiguity or uncertain risks exhibited by subjects presented with the Ellsberg problem poses a challenge to Bayesians by clashing with desiderata (ii) above (adequacy). It also hints at a more general normative intuition: That sometimes, it is rationally permissible to have \emph{incomparable}\footnote{Or sometimes, more fancifully, incommensurable.} confidence levels towards different propositions. What is more probable, that (A) Tokyo will have a severe earthquake on June 1, 2230; or that (B) Norway will have an unusually good fish catch on that day \citep[p.658]{Jaynes2003-JAYPTT}? It seems entirely innocuous to assume that it is just not meaningful to compare the probabilities, given one lacks some background information. Jaynes himself points out that, with enough context provided, there might be causal links to be hypothesized which enable us to compare the probabilities directly. But lacking that information, it seems at least permissible to judge them as incomparable with respect to the level of uncertainty, which the Bayesian framework cannot account for. 
 \subsection{III}
 
-Of course, there are ways to respond for the determined Bayesian. (Briefly list them here, need to get on with it!) 
+Of course, there are ways to respond for the determined Bayesian. (Briefly list them here, need to get on with it!) How can she respond? First off, the challenge based on the weight of evidence seems to assume a too simplistic toolset for the Bayesian. Instead of just modeling heads on the next throw as a binary variable, we could introduce the coin bias as a continuous random variable, taking values in the unit interval, and represent the belief in the bias by a probability distribution over this continuous variable. (Move on quick!) 
+
 \section{III}
 
 So far, I have presented three substantial challenges to the Bayesian framework applied in the synchronic case: We just look at a given point in time, and evaluate the adequacy of the probabilistic model. I showed that the Bayesian has the means to respond. Still, as an alternative option that a move to imprecise probabilities solves the problems with ease. In this section, I also consider the diachronic case: a learning experience for the agent. While this is one of the cornerstones of the Bayesian framework through conditionalization, the issue presented here is not easily addressed with a single probability distribution, or so I argue. 
 
-Suppose you learn, with certainty, that the probability of an event $E$ happening lies in some interval $[a,b] \subset [0,1]$, but nothing else about $E$. Specifically, you do not learn that each intermediate interval f the same size is equiprobable. This might just be the meteorologist telling you of the Blizzard hitting your home town is more probable than 15\%, but less than 40\%. Since the information you learn directly deals with probabilities, it seems natural to include the content of the learning experience in a probabilistic model and make the information endogenous.  
+Suppose you learn, with certainty, that the probability of an event $E$ happening lies in some interval $[a,b] \subset [0,1]$, but nothing else about $E$. Specifically, you do not learn that each intermediate interval f the same size is equiprobable. This might just be the meteorologist telling you of the Blizzard hitting your home town is more probable than 15\%, but less than 40\%. Since the information you learn directly deals with probabilities, it seems natural to include the content of the learning experience in a probabilistic model and make the information endogenous. Furthermore, $E$ is evidence for some hypotheses $H$, like in this simplest of Bayesian networks (Figure \ref{fig:net}). 
 
 \begin{figure}[h]
 \centering
@@ -92,13 +94,18 @@ Suppose you learn, with certainty, that the probability of an event $E$ happenin
 \tikzstyle{main}=[circle, minimum size = 14mm, thick, draw =black!80, node distance = 16mm]
 \tikzstyle{connect}=[-latex, thick]
 \tikzstyle{box}=[rectangle, draw=black!100]
-  \node[main, fill = white!100] (alpha) [label=center$H$] { };
+  \node[main, fill = white!100] (alpha) [label=center:$H$] { };
   \node[main] (theta) [right=of alpha,label=center:$E$] { };
   \path (alpha) edge [connect] (theta);
 \end{tikzpicture}
+\caption{Evidence and hypothesis.}
+\label{fig:net}
 \end{figure}
 
 Paragraph about the relevance of the issue: Just vague expert testimony, etc. -> Robust Bayes Analysis, Quantum thingies? 
+
+How to accommodate this evidential situation in the standard Bayesian framework? An obvious response seems to be similar to a previous response, by expanding on the complexity of variables used.   
+
 
 the dynamic case: learning imprecise information. Missing: Very good scientific example. Also missing: Much of a clue as to how it relates to Robust Bayesian Analysis
 \begin{enumerate}[label=\roman{*}]
