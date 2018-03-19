@@ -1,6 +1,5 @@
 %!TEX program = xelatex 
 \documentclass[11pt, a4paper]{scrartcl}
-%\documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 %\usepackage[a4paper,lmargin={3.5cm},rmargin={3.5cm}, tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{setspace}
@@ -40,7 +39,7 @@
 %\renewcommand{\thesection}{\Roman{section}} 
 
 \title{\osfamily{}Learning Imprecise Information}
-\author{Class Paper for Central Topics in Philosophy of Science \\ Prof.\ Dr.\ Stephan Hartmann \\ WS 2017/2018, LMU Munich \\ Conrad Friedrich \\ \texttt{conradfriedrich@posteo.net} \\ Word count: 5643}
+\author{Class Paper for Central Topics in Philosophy of Science \\ Prof.\ Dr.\ Stephan Hartmann \\ WS 2017/2018, LMU Munich \\ Conrad Friedrich \\ \texttt{conradfriedrich@posteo.net} \\ Word count: 3001}
 
 \begin{document}
 
@@ -53,13 +52,16 @@ Modeling the cognitive state and dynamics of scientists or, more generally, epis
 
 The Bayesian framework is a method or tool to assess a philosophical problem. The framework forces the philosopher to very precisely state her problem in a quantifiable manner, and repays this effort with the deductive capabilities of probability theory. When such a powerful tool becomes orthodoxy, it might be tempting to disregard the substantial assumptions made just to be able to apply the tool. When you've got a hammer, everything looks like a nail. The method should not be implemented for its own sake, of course, and instead be regulated by some sensible desiderata for a successful use of the method. Two particularly relevant desiderata are somewhat self-evident: (i) the lack of complexity of the framework. Bayesianism is comparably simple: The doxastic state of an agent is modeled by a single probability function. If there is a competing framework which do offer little more for the price of massively increased complexity, it'd be prudent to stick to the Bayes, man. And (ii), models created with the framework need to be adequate. That is, there are no glaring relevant features of the problem that is modeled missing, and the model itself does not produce artifacts not present in the problem. We are in rather murky philosophical waters here, but an intuitive understanding is all we need so far. Note that I do not open Pandora's Box and speak about the balancing of the mentioned and other desiderata.
 
-Responsible use of the framework requires careful analysis of the applicability of the framework just as much as of the actual application, then. To respect this, it is especially critical to know the limits and weaknesses, and Bayesianism arguably has its fair share.  
+Responsible use of the framework requires careful analysis of the applicability of the framework just as much as of the actual application, then. To respect this, it is especially critical to know the limits and weaknesses, and Bayesianism arguably has its fair share. As a stout critic of Bayesianism as a universal theory of induction, \citet{Norton2011-NORCTB} makes a number of substantial challenges, some of which are the subject of the present paper. I will focus on those challenges to Bayesianism which \emph{prima facie} require the use a more elaborate model.
 
-As a stout critic of Bayesianism as a universal theory of induction, \citet{Norton2011-NORCTB} makes a number of substantial challenges, some of which are the subject of the present paper. I will focus on those challenges to Bayesianism which \emph{prima facie} require the use a more elaborate model.
+In particular, I argue that while there is some wiggle room for the orthodox Bayesian, we can construct evidential situations in which a single probability function is insufficient to represent an agent's doxastic attitude, and these situations are best modelled by the use of a related, but more general framework, dubbed imprecise probabilities.
 
-In particular, I argue that while there is some wiggle room for the orthodox Bayesian, we can construct evidential situations in which a single probability function is insufficient to represent an agent's doxastic attitude, and these situations are best modelled by the use of imprecise probabilities.
+Section II starts with a recap of what the Bayesian framework entails in the narrow interpretation Norton employs. Appropriately modeling the weight evidence bears on our beliefs can pose a challenge to the Bayesian framework. States of ignorance should be reflected in a doxastic model, too. A third challenge stems from the universal comparability of doxastic attitudes that the Bayesian framework implies. But the Bayesian can respond, at least to some degree. Modeling with the help of imprecise probabilities overcomes all challenges posed.
 
-Quick summary of what follows
+Section III throws a curveball: What if the information of a learning experience strongly suggest a credence represented by an imprecise probability? The standard Bayesian framework has significant problems. Imprecise Probabilities fair much better, or so at least I argue. A quite informal account of how to incorporate such evidence is developed on a toy model.
+
+Section IV considers some objections and possible ways to respond for the classically Bayesian, while Section V concludes.
+
 \section{II}
 
 When talking about the Bayesian framework, I refer to the narrow interpretation \citet{Norton2011-NORCTB} which uses a single, precise probability function to model doxastic attitudes, and do not mean, in broad generality, to the use of probabilistic methods. Closely related is the position of Bayesianism, which i take to (i) prescribe obeying the probability axioms, (ii) update via conditionalization, and (iii) to a more objective extent some form of the principle of indifference in place. This minimal skeleton is enough to require universal comparability of doxastic attitudes and the agent to always be opinionated. In this section, I address some challenges to the orthodox Bayesian view, and how the Bayesian might respond. 
@@ -119,11 +121,13 @@ Note that this is compatible with an already imprecise prior belief in $H$ as we
 
 \section{IV}
 
-Modeling doxastic states with imprecise probabilities is not uncontroversial. Perusing the literature, I could make out two central classes of argument in favour of the use of imprecise probabilities. That is the class I dubbed `weight of evidence' on the one hand and `ignorance' on the other. While the former challenge can be met quite convincingly with the orthodox Bayesian tool set, the latter poses a more resilient problem, while they are easily dealt with using imprecise probabilities. To tip the scales further in favor of a justified use of IP, I asked: What if the evidence already is imprecise? A single sharp (second-order) probability distribution cannot account for this situation, while IP of course can. This makes a good case justifying the use of imprecise probabilities. What could staunch opponents of a narrow Bayesian framework without imprecision respond? 
+Modeling doxastic states with imprecise probabilities is not uncontroversial. Perusing the literature, I could make out two central classes of argument in favour of the use of imprecise probabilities. That is the class I dubbed `weight of evidence' on the one hand and `ignorance' on the other. While the former challenge can be met quite convincingly with the orthodox Bayesian tool box, the latter poses a more resilient problem, while they are easily dealt with using imprecise probabilities. To tip the scales further in favor of a justified use of IP, I asked: What if the evidence already is imprecise? A single sharp (second-order) probability distribution cannot account for this situation, while IP of course can. This makes a good case justifying the use of imprecise probabilities. What could staunch opponents of a narrow Bayesian framework without imprecision respond? 
 
 First, the example given here is not much more than a parlor trick. It's requirement are exactly such as to exclude classic probabilities and cater to IP. It seems rather ad hoc. There needs to be independent and convincing motivation for the argument to go through. A concrete example from the philosophy of science would be very helpful to get the point across of \emph{why} exactly it is interesting and relevant to account for imprecise evidence. As it stands now, my research hasn't yielded very much. One way to go would be to follow the statisticians doing Robust Bayesian Analysis \citep{Berger1994} and learn more about their motivations. Maybe it is just as simple as to state that expert testimony often is vague \citep{Destercke2014}. Another route is to analyze proposals of the use of IP in quantum mechanics \citep{pittphilsci4734}, which may be promising. Unfortunately it didn't make its way into this paper yet.
 
-Problems: Second order imprecision etc., dilation, Bauerntrick: Begging the question by already demanding exactly what Imprecise probabilities gief.
+Second, even if the example would be well-motivated, there is an obvious gap in the argument from `the standard Bayesian framework cannot account for this' to `we should employ IP'. The argument presupposes the absence of alternatives, but potential alternatives are heavily under explored in this paper. For example, to deal with modeling ignorance, the structurally less complex Dempster-Shafer belief functions would already be sufficient \citep{Shafer1976-SHAAMT, Norton2011-NORCTB}. The argument is in need of sharper boundaries of exactly when IP becomes a necessary addition to the philosopher's toolbox.
+
+Third, if there really are no alternatives to IP in the given situation, it is still worth considering the problems IP bring along, in detail discussed by \citep{sep-imprecise-probabilities}, such as the oft-discussed problem of dilation, or the spurious second-order precision: the sets of probability functions have sharp boundaries. Shouldn't those be imprecise, too?  
 
 \section{V}
 
